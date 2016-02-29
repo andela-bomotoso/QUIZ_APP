@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/quiz_signin"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bukola_omotoso.quiz_app.SignInActivity"
+    tools:showIn="@layout/activity_sign_in">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/image_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/image_margin"
+        android:layout_marginBottom="@dimen/image_margin"
+        android:src="@drawable/quiz2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        android:textColorHint="@color/colorTextIcon"
+        android:hint="@string/email_hint"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:textColorHint="@color/colorTextIcon"
+        android:hint="@string/password_hint"/>
+    <com.example.bukola_omotoso.quiz_app.TogglePasswordVisibilityButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:padding="10dp"
+        android:background="@drawable/white_view_state_list"
+        app:passwordEditText="@id/password"
+        app:passwordInvisibleImageResource="@drawable/ic_visibility_white_18dp"
+        app:passwordVisibleImageResource="@drawable/ic_visibility_off_white_18dp"/>
+</LinearLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/image_margin"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/item_state_list"
+            android:textColor="@color/colorTextIcon"
+            android:onClick="signIn"
+            android:id="@+id/sign_in" />
+    <TextView
+        android:layout_marginTop="@dimen/image_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextIcon"
+        android:id="@+id/forgot_password"
+        android:text="Forgot Password?"/>
+
+</LinearLayout>
