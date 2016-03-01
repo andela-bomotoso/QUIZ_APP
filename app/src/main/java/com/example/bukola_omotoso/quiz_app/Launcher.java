@@ -12,6 +12,7 @@ public class Launcher {
 
     public static void LauncherActivity(Context context, Class<?> activity) {
         Intent intent = new Intent(context,activity);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         context.startActivity(intent);
     }
 }
