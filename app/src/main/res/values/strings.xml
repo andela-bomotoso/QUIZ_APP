@@ -9,9 +9,11 @@
     <string name="facebook_app_id">1567728580219956</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="title_activity_sign_in">SignInActivity</string>
-    <string name="title_activity_home">Quiz Home</string>
+    <string name="title_activity_home">Quiz World</string>
+    <string name="home_text_select">Select a quiz category</string>
+    <string name="profile_activity">Select a profile activity</string>
     <string name="section_format">Hello World from section: %1$d</string>
-
+    <string name="history_msg">Below is the history of your quizzes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
