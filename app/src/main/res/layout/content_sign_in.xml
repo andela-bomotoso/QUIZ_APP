@@ -61,6 +61,18 @@
             android:textColor="@color/colorTextIcon"
             android:onClick="signIn"
             android:id="@+id/sign_in" />
+
+    <TextView
+        android:layout_marginTop="@dimen/image_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextIcon"
+        android:id="@+id/create_account"
+        android:text="@string/create_account"
+        android:onClick="createANewAccount"/>
+
     <TextView
         android:layout_marginTop="@dimen/image_margin"
         android:layout_width="wrap_content"
@@ -69,6 +81,6 @@
         android:textStyle="bold"
         android:textColor="@color/colorTextIcon"
         android:id="@+id/forgot_password"
-        android:text="Forgot Password?"/>
+        android:text="@string/forgot_password"/>
 
 </LinearLayout>

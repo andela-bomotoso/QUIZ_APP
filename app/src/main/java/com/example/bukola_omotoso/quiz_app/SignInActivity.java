@@ -1,5 +1,6 @@
 package com.example.bukola_omotoso.quiz_app;
 
+import android.app.LauncherActivity;
 import android.content.Context;
 import android.content.pm.LabeledIntent;
 import android.os.Bundle;
@@ -71,6 +72,10 @@ public class SignInActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void createANewAccount(View view)    {
+        Launcher.LauncherActivity(context,MainActivity.class);
     }
 
 }

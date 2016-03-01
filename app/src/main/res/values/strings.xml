@@ -16,4 +16,6 @@
     <string name="history_msg">Below is the history of your quizzes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>
+    <string name="create_account">Create a new account</string>
+    <string name="forgot_password"> Forgot Password?</string></resources>
+
