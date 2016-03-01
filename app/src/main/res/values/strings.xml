@@ -10,6 +10,7 @@
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="title_activity_sign_in">SignInActivity</string>
     <string name="title_activity_home">Quiz Home</string>
+    <string name="home_text_select">Select a quiz category</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
     <!-- TODO: Remove or change this placeholder text -->
