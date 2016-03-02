@@ -17,5 +17,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="create_account">Create a new account</string>
-    <string name="forgot_password"> Forgot Password?</string></resources>
+    <string name="forgot_password"> Forgot Password?</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="splash_msg">Quiz World</string>
+</resources>
 

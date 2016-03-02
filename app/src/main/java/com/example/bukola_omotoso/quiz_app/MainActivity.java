@@ -11,7 +11,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.facebook.CallbackManager;
@@ -43,8 +46,32 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText)findViewById(R.id.password);
         parentLayout = (LinearLayout)findViewById(R.id.quiz_layout);
         firebaseAuth = new FirebaseAuth(this);
+        startAnimations();
 
     }
+
+    private void startAnimations()  {
+        Animation anim = AnimationUtils.loadAnimation(this,R.anim.alpha);
+        anim.reset();
+        LinearLayout linearLayout = (LinearLayout)findViewById(R.id.quiz_layout);
+        linearLayout.clearAnimation();
+        linearLayout.startAnimation(anim);
+
+        anim = AnimationUtils.loadAnimation(this,R.anim.translate);
+        anim.reset();
+        ImageView imageView = (ImageView)findViewById(R.id.logo);
+        imageView.clearAnimation();
+        imageView.startAnimation(anim);
+
+        anim = AnimationUtils.loadAnimation(this,R.anim.translate);
+        anim.reset();
+        LinearLayout linearLayout1 = (LinearLayout)findViewById(R.id.linear2);
+        linearLayout1.setVisibility(View.VISIBLE);
+        linearLayout1.clearAnimation();
+        linearLayout1.startAnimation(anim);
+    }
+
+
 
     @Override
     protected void onActivityResult(int requestCode,int resultCode,Intent data) {
